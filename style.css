@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #4c5c68;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    width: 80vw;
+    padding: 25px 10vw;
+    justify-content: space-between;
+    background-color: #46494c;
+}
+
+#header-left {
+    display: flex;
+    flex-direction: column;
+    color: #ffd7ba;
+}
+
+#name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#job {
+    font-size: 1.5em;
+}
+
+#header-right {
+    display: flex;
+    column-gap: 10px;
+    user-select: none;
+}
+
+#header-right img {
+    width: 4em;
+    cursor: pointer;
+    user-select: none;
+}
+
+#header-right img:hover {
+    filter: brightness(1000%);
+}
+
+#projects {
+    padding-top: 200px;
+    margin: 0 17.5vw;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 2vw;
+    column-count: 2;
+}
+
+.project {
+    width: 30vw;
+    color: #ffd7ba;
+    display: flex;
+    flex-direction: column;
+    background-color: #46494c;
+    box-shadow: 4px 4px 8px black;
+}
+
+.project-gif {
+    width: 30vw;
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.project-information {
+    position: absolute;
+    width: 27vw;
+    padding: 0.5em 1.5vw;
+    display: flex;
+    gap: 2em;
+    font-size: 0.9em;
+    background-color: rgba(70, 73, 76, 0.75);
+}
+
+.project-information div, .project-information a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.project-information div div {
+    height: 100%;
+}
+
+.project-information .clickable {
+    cursor: pointer;
+}
+
+.project-information .clickable * {
+    cursor: pointer;
+}
+
+.project-information a {
+    color: #ffd7ba;
+    text-decoration: none;
+}
+
+.project-information .clickable:hover {
+    filter: brightness(1000%);
+}
+
+.project-information img {
+    width: 1.5em;
+}
+
+.project-footer {
+    padding: 1em;
+    background-color: #46494c;
+}
+
+.project-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f4978e;
+}
+
+.project-description {
+    padding-top: 1.5em;
+    font-size: 1.25em;
+    color: #F8EDEB;
+}
